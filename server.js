@@ -7,6 +7,8 @@ app.listen(3000, () => {
 });
 
 app.get("/messages", (req, res) => {
-  console.log(res);
-  res.json({ message: "Hello, World!" });
+  res.json([
+    { message: "Hello, World!", name: "Ross", age: "69" },
+    { message: "message" },
+  ]);
 });
